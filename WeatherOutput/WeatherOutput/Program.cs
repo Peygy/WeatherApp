@@ -7,7 +7,7 @@ namespace WeatherOutput
         static void Main(string[] args)
         {
             ObjectInteractions menu = new ObjectInteractions();
-            menu.
+            menu.Menu();
         }
     }
 }

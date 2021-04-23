@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace WeatherOutput
 {
-    class ObjectInfo
+    class sys
     {
-        public string name { get; set; }
-        public int id { get; set; }
-
+        public string country { get; set; }
     }
 }

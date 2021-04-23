@@ -1,0 +1,16 @@
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.exe
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.deps.json
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.runtimeconfig.json
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.runtimeconfig.dev.json
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.dll
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\ref\WeatherOutput.dll
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\bin\Debug\net5.0\WeatherOutput.pdb
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.csprojAssemblyReference.cache
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.AssemblyInfoInputs.cache
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.AssemblyInfo.cs
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.csproj.CoreCompileInputs.cache
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.dll
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\ref\WeatherOutput.dll
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.pdb
+D:\Программирование\С#\Repos\Weather\WeatherOutput\WeatherOutput\obj\Debug\net5.0\WeatherOutput.genruntimeconfig.cache

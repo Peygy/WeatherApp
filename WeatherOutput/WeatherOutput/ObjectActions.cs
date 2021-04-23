@@ -5,29 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Text.Json;
+using System.Net;
 
 namespace WeatherOutput
 {
     class ObjectActions
     {
-        public void Serializing(string path, ObjectInfo weatherObj)
+        public void WebDataTransfer(string city)
         {
-            using (StreamWriter stream = new StreamWriter(path))
+            ObjectInfo general;
+            sys Sys;
+            weather Weather;
+            main Main;
+
+            WebRequest request = WebRequest.Create($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=2b97cac807e74b40cbd789b3ab8866c4");
+            WebResponse response = request.GetResponse();
+
+            using (Stream stream = response.GetResponseStream())
             {
-                stream.Write(JsonSerializer.Serialize(weatherObj));
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    while(reader.ReadLine() != null)
+                    {
+                        general = JsonSerializer.Deserialize<ObjectInfo>(reader.ReadToEnd());
+                        Sys = JsonSerializer.Deserialize<sys>(reader.ReadToEnd());
+                        Weather = JsonSerializer.Deserialize<weather>(reader.ReadToEnd());
+                        Main = JsonSerializer.Deserialize<main>(reader.ReadToEnd());
+                    }
+                }
             }
-        }
-
-
-        public ObjectInfo Deserializing(string path)
-        {
-            ObjectInfo weatherObj;
-            using (StreamReader stream = new StreamReader(path))
-            {
-                weatherObj = JsonSerializer.Deserialize<ObjectInfo>(stream.ReadToEnd());
-            }
-
-            return weatherObj;
         }
     }
 }
