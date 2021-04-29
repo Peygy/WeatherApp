@@ -30,7 +30,7 @@ namespace WeatherOutput
                         general = JsonSerializer.Deserialize<ObjectInfo>(reader.ReadToEnd());
                         Sys = JsonSerializer.Deserialize<sys>(reader.ReadToEnd());
                         Weather = JsonSerializer.Deserialize<weather>(reader.ReadToEnd());
-                        Main = JsonSerializer.Deserialize<main>(reader.ReadToEnd());
+                        Main = JsonSerializer.Deserialize<main>(reader.ReadLine());
                     }
                 }
             }

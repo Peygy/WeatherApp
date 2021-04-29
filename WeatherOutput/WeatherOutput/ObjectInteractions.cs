@@ -14,6 +14,15 @@ namespace WeatherOutput
         weather Weather;
         main Main;
 
+        public ObjectInteractions()
+        {
+            info = new ObjectInfo();
+            actions = new ObjectActions();
+            Sys = new sys();
+            Weather = new weather();
+            Main = new main();
+        }
+
         public void Menu()
         {
             int input = 0;
