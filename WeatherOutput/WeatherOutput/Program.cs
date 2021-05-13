@@ -6,8 +6,8 @@ namespace WeatherOutput
     {
         static void Main(string[] args)
         {
-            ObjectInteractions menu = new ObjectInteractions();
-            menu.Menu();
+            Actions output = new Actions();
+            output.WeatherInput();
         }
     }
 }
