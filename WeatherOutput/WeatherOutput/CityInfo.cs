@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace WeatherOutput
 {
     [Serializable]
     class CityInfo
     {
-        sys Sys;
-        weather Weather;
-        main Main;
+        [JsonInclude]
+        public sys sys;
+
+        [JsonInclude]
+        public weather weather;
+
+        [JsonInclude]
+        public main main;
 
         public CityInfo()
         {
-            Sys = new sys();
-            Weather = new weather();
-            Main = new main();
+            sys = new sys();
+            weather = new weather();
+            main = new main();
         }
 
         public string name { get; set; }
@@ -25,7 +31,7 @@ namespace WeatherOutput
 
         public void WeatherOutput() //Ввод города и вывод погоды для этого города
         {            
-            Console.WriteLine($"Город: {name}, Страна: {Sys.country}, Температура: {Main.temp}, Погода: {Weather.main}, {Weather.description}");
+            Console.WriteLine($"Город: {name}, Страна: {sys.country}, Температура: {main.temp}, Погода: {weather._0.main}, {weather._0.description}");
         }
     }
 }

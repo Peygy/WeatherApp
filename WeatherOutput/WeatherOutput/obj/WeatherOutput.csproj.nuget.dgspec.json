@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj": {}
+    "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj": {}
   },
   "projects": {
-    "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj": {
+    "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
+        "projectUniqueName": "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
         "projectName": "WeatherOutput",
-        "projectPath": "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
+        "projectPath": "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
         "packagesPath": "C:\\Users\\Peygy\\.nuget\\packages\\",
-        "outputPath": "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\obj\\",
+        "outputPath": "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

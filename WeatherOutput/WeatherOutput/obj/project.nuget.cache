@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T10RVRYeAoslrTktEEVLxvkke9od/Vb7HC62/8ux0U6eLWMDqsYqAIdlgU+xL0Hu5ZY8qLMd5U4Qeo8grpt3Bg==",
+  "dgSpecHash": "Hsn/1/a/wF0Vv6l1LxL2kMfCyHTdTr3CjlRoN1mWC5g+V0WZeeRIInbFzEOLWh3DKZ1UXJjSZdUPIsMaqa9tDA==",
   "success": true,
-  "projectFilePath": "D:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "H:\\Программирование\\С#\\Repos\\Weather\\WeatherOutput\\WeatherOutput\\WeatherOutput.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Peygy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

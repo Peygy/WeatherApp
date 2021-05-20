@@ -13,10 +13,16 @@ namespace WeatherOutput
     {        
         public CityInfo WebDataTransfer(string city)
         {
+            string result;
             WebRequest request = WebRequest.Create($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=2b97cac807e74b40cbd789b3ab8866c4");
             WebResponse response = request.GetResponse();
 
-            CityInfo menu = JsonSerializer.Deserialize<CityInfo>(new StreamReader(response.GetResponseStream()).ReadLine());
+            using(StreamReader reader = new StreamReader(response.GetResponseStream()))
+            {
+                result = reader.ReadToEnd();
+            }
+
+            CityInfo menu = JsonSerializer.Deserialize<CityInfo>(result);
 
             return menu;
         }
@@ -25,7 +31,7 @@ namespace WeatherOutput
         {
             CityInfo info = new CityInfo();
             Console.Write("Название города (на англ. языке):  ");
-            WebDataTransfer(Console.ReadLine());
+            info = WebDataTransfer(Console.ReadLine());
             Console.WriteLine();
             info.WeatherOutput();
         }
